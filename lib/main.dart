@@ -1,4 +1,5 @@
 import 'package:email_screen/features/onboard/onboard_view.dart';
+import 'package:email_screen/features/view/http_view.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: const Color(0xffe8edfc),
         appBarTheme:const AppBarTheme(color: Color(0xffe8edfc))
       ),
-      home: const OnBoardView(),
+      home:  OnBoardView(),
     );
   }
 }

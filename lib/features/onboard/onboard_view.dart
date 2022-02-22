@@ -1,9 +1,10 @@
+import 'package:email_screen/features/view/http_view.dart';
+import 'package:email_screen/features/view/inbox_view.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 
 import '../../components/constants/color/app_color.dart';
 import '../../components/constants/text/app_string.dart';
-import '../view/inbox_view.dart';
 
 class OnBoardView extends StatefulWidget {
   const OnBoardView({Key? key}) : super(key: key);
@@ -96,7 +97,7 @@ class _OnBoardViewState extends State<OnBoardView> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => InboxView(),
+                      builder: (context) => const HttpView(),
                     ));
               },
               child: Row(
